@@ -1,0 +1,14 @@
+deployments
+.secret.json
+node_modules
+artifacts
+gas-report.txt
+coverage.json
+coverage
+.env
+artifacts
+cache
+node_modules
+node_modules
+node_modules
+.DS_Store

@@ -1,0 +1,15 @@
+{
+    "extends": "solhint:default",
+    "rules": {
+      "payable-fallback": "warn",
+      "max-states-count": ["warn",5],
+      "max-line-length": ["error",150],
+      "no-empty-blocks": "warn",
+      "no-unused-vars": "warn",
+      "reason-string": ["warn",{"maxLength":32}],
+      "avoid-sha3": "warn",
+      "avoid-suicide": "warn"
+    }
+  }
+  // npx solhint 'contracts/**/*.sol' -> checks all files
+  // npx solhint contracts/File_Name.sol -> checks specific file
