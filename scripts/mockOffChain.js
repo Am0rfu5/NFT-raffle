@@ -19,7 +19,9 @@ async function mockKeepers() {
 
 async function mockVrf(requestId, raffle) {
     console.log("We on a local network? Ok let's pretend...")
-    const vrfCoordinatorV2Mock = await ethers.getContract("VRFCoordinatorV2Mock")
+    const vrfCoordinatorV2Mock = await ethers.getContract(
+        "VRFCoordinatorV2Mock"
+    )
     await vrfCoordinatorV2Mock.fulfillRandomWords(requestId, raffle.address)
     console.log("Responded!")
     const recentWinner = await raffle.getRecentWinner()
